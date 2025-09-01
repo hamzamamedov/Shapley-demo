@@ -276,6 +276,47 @@ header {
     }
   }
 }
+
+/* Section 6 */
+
+#our-main {
+  .clients {
+    padding: 20px 10px;
+    h2 {
+      text-align: center;
+    }
+    .logo-container {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .download {
+      margin-top: 150px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      p {
+        text-align: center;
+      }
+      a {
+        width: 200px;
+      }
+    }
+  }
+}
+
+/* ----------FOOTER------------ */
+
 /* ! --------------------FOR DESCTOP-------------------- */
 @media (min-width: 768px) {
   .container {
@@ -393,6 +434,33 @@ header {
             font-size: 1.5em;
             color: white;
           }
+        }
+      }
+    }
+  }
+
+  /* Section 6 */
+
+  #our-main {
+    .clients {
+      h2 {
+        text-align: center;
+      }
+      .logo-container {
+        margin: auto;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+      .download {
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+          width: 200px;
         }
       }
     }
