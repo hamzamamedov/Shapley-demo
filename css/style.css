@@ -232,10 +232,50 @@ header {
         height: 100%;
         object-fit: cover;
       }
+      .overlay {
+        display: none;
+      }
     }
   }
 }
 
+/* !  Section 5 Slider */
+#slider {
+  background: url("../img/darkcloud.jpeg") center;
+  .slider {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    p {
+      width: 70%;
+      text-align: center;
+    }
+    .slide {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: white;
+        font-size: 2em;
+      }
+      .card {
+        text-align: center;
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
 /* ! --------------------FOR DESCTOP-------------------- */
 @media (min-width: 768px) {
   .container {
@@ -330,6 +370,7 @@ header {
           }
         }
         .overlay {
+          display: block;
           transition: all 0.3s ease-in-out;
           position: absolute;
           left: 0;
