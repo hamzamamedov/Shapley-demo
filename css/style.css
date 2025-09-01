@@ -241,7 +241,7 @@ header {
 
 /* !  Section 5 Slider */
 #slider {
-  background: url("../img/darkcloud.jpeg") center;
+  background: url("../img/darkcloud.jpeg") center no-repeat;
   .slider {
     padding: 20px 10px;
     display: flex;
@@ -264,7 +264,10 @@ header {
         font-size: 2em;
       }
       .card {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
         img {
           width: 100px;
           height: 100px;
@@ -316,6 +319,26 @@ header {
 }
 
 /* ----------FOOTER------------ */
+footer {
+  background-color: black;
+  .footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    p {
+      color: white;
+    }
+    .social a {
+      color: white;
+      font-size: 1.2em;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+  }
+}
 
 /* ! --------------------FOR DESCTOP-------------------- */
 @media (min-width: 768px) {
@@ -461,6 +484,32 @@ header {
         justify-content: space-between;
         a {
           width: 200px;
+        }
+      }
+    }
+  }
+
+  /* --------Footer-------- */
+  footer {
+    .footer {
+      .social {
+        a:hover {
+          scale: 1.5;
+        }
+        a:nth-child(1):hover {
+          color: blue;
+        }
+        a:nth-child(2):hover {
+          color: rgba(0, 204, 255, 0.909);
+        }
+        a:nth-child(3):hover {
+          color: rgb(0, 3, 169);
+        }
+        a:nth-child(4):hover {
+          color: rgb(255, 0, 0);
+        }
+        a:nth-child(5):hover {
+          color: rgb(255, 0, 170);
         }
       }
     }
